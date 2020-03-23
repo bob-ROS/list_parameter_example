@@ -1,10 +1,13 @@
 robots:
   robot1: 
+    scan_topic_name: r1/scan
     base_frame: r1/base_link
     sensor_frame: r1/lidar_link
   robot2:
+    scan_topic_name: r2/scan
     base_frame: r2/base_link
     sensor_frame: r2/lidar_link
   robot3:
+    scan_topic_name: r3/scan
     base_frame: r3/base_link
     sensor_frame: r3/lidar_link
