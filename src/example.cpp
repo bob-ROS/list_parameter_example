@@ -1,6 +1,5 @@
 #include <ros/ros.h>
 #include <XmlRpcValue.h>
-#include <std_msgs/String.h>
 #include <sensor_msgs/LaserScan.h>
 #include <boost/bind.hpp>
 
@@ -24,8 +23,6 @@ int main( int argc, char** argv ){
    ROS_INFO_STREAM("scan_topic_name: " << robots[it->first]["scan_topic_name"]);
    ROS_INFO_STREAM("Base_frame: " << robots[it->first]["base_frame"]);
    ROS_INFO_STREAM("sensor_frame: " << robots[it->first]["sensor_frame"]);
-   std::string base_frame = robots[it->first]["base_frame"];
-   std::string sensor_frame = robots[it->first]["sensor_frame"];
 
    sub_vector.push_back(nh.subscribe<sensor_msgs::LaserScan>(robots[it->first]["scan_topic_name"],1, boost::bind(&callback, _1, robots[it->first]["base_frame"],robots[it->first]["sensor_frame"])));
 
