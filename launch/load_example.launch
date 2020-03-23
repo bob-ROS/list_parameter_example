@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+    <rosparam file="$(find list_parameter_example)/param/robots.yaml" />
+    <node pkg="list_parameter_example" type="list_parameter_example" name="list_parameter_example" output="screen"/>
+</launch>

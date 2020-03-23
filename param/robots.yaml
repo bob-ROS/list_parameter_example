@@ -1,0 +1,10 @@
+robots:
+  robot1: 
+    base_frame: r1/base_link
+    sensor_frame: r1/lidar_link
+  robot2:
+    base_frame: r2/base_link
+    sensor_frame: r2/lidar_link
+  robot3:
+    base_frame: r3/base_link
+    sensor_frame: r3/lidar_link
