@@ -12,6 +12,8 @@ find_package(catkin REQUIRED COMPONENTS
   sensor_msgs
 )
 
+find_package (Eigen3 REQUIRED NO_MODULE)
+
 include_directories(
   include
   ${EXTERNAL_INCLUDE_DIRS}
